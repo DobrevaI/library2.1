@@ -36,10 +36,10 @@ if st.button("Add the book"):
         found = False
         for book in st.session_state.books:
           if book["title"] == search_title:
-                st.write(book)
-                found = True
-              if found == False:
-                st.write("The title isn't found")
+            st.write(book)
+            found = True
+          if found == False:
+            st.write("The title isn't found")
           if st.button("Show the cheapest book"):
             if len(st.session_state.books) == 0:
               st.write("There isn't a book")
