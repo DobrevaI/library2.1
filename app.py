@@ -46,7 +46,7 @@ if st.button("Add the book"):
             else:
               cheapest = st.session_state.books[0]
               for book in st.session_state.books:
-          if book["price"]<cheapest["price"]:
-                  cheapest = book
-                  st.write("The cheapest book is")
-                  st.write(cheapest)
+      if book["price"]<cheapest["price"]:
+        cheapest = book
+        st.write("The cheapest book is")
+        st.write(cheapest)
