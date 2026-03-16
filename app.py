@@ -22,7 +22,7 @@ if st.button("Show all books"):
       st.write("author", book["author"])
       st.write("price", book["price"])
       st.write("--------------------")
-  search_author = st.text_input("Enter the author's name")
+search_author = st.text_input("Enter the author's name")
 if st.button("search author"):
   found = False
   for book in st.session_state.books:
