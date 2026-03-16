@@ -31,7 +31,7 @@ if st.button("Add the book"):
                 found = True
               if found == False:
                 st.write("The author isn't found")
-          search_title = st.text_input("Enter the book's title")
+            search_title = st.text_input("Enter the book's title")
       if st.button("search title"):
         found = False
         for book in st.session_state.books:
