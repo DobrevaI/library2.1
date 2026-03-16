@@ -11,7 +11,7 @@ if "books" not in st.session_state:
       "author": author,
       "price": price
       }
-    st.session_state.book.append(book)
+    st.session_state.books.append(book)
     st.success("The book has been added!")
     if st.button("Show all books"):
       if len(st.session_state.books) == 0:
