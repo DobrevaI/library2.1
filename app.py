@@ -5,8 +5,8 @@ if "books" not in st.session_state:
   title = st.text_input("book title")
   author = st.text_input("book author")
   price = st.number_input("book price", min_value = 0.0)
- if st.button("Add the book"):
-    book = {
+if st.button("Add the book"):
+  book = {
       "title": title,
       "author": author,
       "price": price
