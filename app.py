@@ -29,7 +29,7 @@ if st.button("search author"):
     if book["author"] == search_author:
       st.write(book)
       found = True
-    if found == False:
+     if found == False:
       st.write("The author isn't found")
 search_title = st.text_input("Enter the book's title")
 if st.button("search title"):
